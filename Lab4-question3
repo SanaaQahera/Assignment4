@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int maximum(int a,int b)
+{
+	int max;
+	if (a>b)
+	max = a;
+	else
+	if (b>a)
+	max = b;
+	return max;
+}
+int minimum(int a, int b)
+{
+	int min;
+	if (a<b)
+	min = a;
+	else
+	if (b<a)
+	min = b;
+	return min;
+}
+
+int main() {
+	
+	int a,b,max,min;
+	cout <<"Enter two numbers\n";
+	cin >>a >>b;
+	max = maximum(a,b);
+	cout <<"The maximum is ="<<max <<endl;
+	min = minimum(a,b);
+	cout <<"The minimum is ="<<min;
+	
+}
