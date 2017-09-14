@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+double diameter(double r)
+{
+	double dia = 2*r;
+	return dia;
+}
+
+double circumference(double r)
+{
+	double circ = 2*3.14*r;
+	return circ;
+}
+
+double area(double r)
+{
+	double area = 3.14*r*r;
+	return area;
+}
+
+int main() {
+	
+int r,d,c,a;
+cout <<"Enter the radius\n";
+cin >>r;
+d = diameter(r);
+c = circumference(r);
+a = area(r);
+cout <<"Diameter = "<<d <<endl <<"Circumference = "<<c <<endl <<"Area = "<<a <<endl;
+	return 0;
+}
