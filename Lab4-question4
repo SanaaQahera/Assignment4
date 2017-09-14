@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int evenodd(int n)
+{
+	if (n%2 == 0)
+	cout <<"Number is even";
+	else
+	if (n%2 != 0)
+	cout <<"Number is odd";
+}
+
+int main() {
+	
+	int n; 
+	cout <<"Enter a number\n";
+	cin >>n;
+	evenodd(n);
+	
+	return 0;
+}
