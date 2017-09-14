@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int prime(int up,int low)
+{
+	int i, j;
+      bool isPrime = true;
+     
+      
+      for ( j = low; j<= up; j++){
+    	isPrime = true;
+    	for(i = 2; i <= (j/2); i++){
+    		if(j % i == 0){
+    		isPrime = false;
+    		break;
+    		}
+    	}
+    	if (isPrime){
+    	cout << j << "  ";
+    	}
+}
+}
+int main() {
+    
+    int up,low;
+    cout <<"Enter the lower limit for prime numbers\n";
+    cin >>low;
+    cout <<"Enter the upper limit for prime numbers\n";
+    cin >>up;
+    prime(up,low);
+	return 0;
+}
